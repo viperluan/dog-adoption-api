@@ -10,7 +10,9 @@
   },
   "scripts": {
     "dev": "tsnd --inspect --transpile-only --respawn ./src/server.ts",
-    "typeorm": "tsnd ./node_modules/typeorm/cli.js"
+    "typeorm": "tsnd ./node_modules/typeorm/cli.js",
+    "typeorm:run": "tsnd ./node_modules/typeorm/cli.js migration:run",
+    "typeorm:revert": "tsnd ./node_modules/typeorm/cli.js migration:revert"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
